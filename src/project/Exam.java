@@ -27,7 +27,7 @@ public class Exam {
 				q.setAnswer(aFile.readLine());
 			}
 			for (Question q : qList) {
-				if (q.getQuestion() != null && q.getAnswer() != null)
+				if (q.getQuestion() != null && q.getAnswer() != null) //was getting a null issue previously
 						 System.out.println(q.getQuestion() + " " + q.getAnswer());
 			}
 		} catch (IOException e) {
